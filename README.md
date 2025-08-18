@@ -76,14 +76,15 @@ scrape-and-caption/
 ├─ model_inference.py       # Generates captions for images in Task1/under_1000
 ├─ scrape_data.py           # Scrapes images from Mytheresa
 └─ README.md
-## Installation and Setup
-```
 
+```
+## Installation and Setup
 ### 1. Clone the repository
 
-
-'git clone https://github.com/Jinanrachid/scrape-and-caption.git'
-'cd scrape-and-caption'
+```
+git clone https://github.com/Jinanrachid/scrape-and-caption.git
+cd scrape-and-caption
+```
 
  ### 2. Create a virtual environment
 
