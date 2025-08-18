@@ -62,6 +62,9 @@ aws configure
 # Enter AWS Secret Access Key
 # Set Default Region (e.g., us-west-2)
 # Set Default Output Format (json)
+```
+## Folder Structure
+```
 scrape-and-caption/
 │
 ├─ application/
@@ -110,8 +113,8 @@ python scrape_data.py
 ```
 python model_inference.py
 ```
-Uses model_claude.py to generate captions for every image in Task1/under_1000.
-Saves results as a CSV file named captions.csv in the same folder.
+- Uses model_claude.py to generate captions for every image in Task1/under_1000.
+- Saves results as a CSV file named captions.csv in the same folder.
 ### Part 3: Run Web Application
 ```
 cd application/backend
