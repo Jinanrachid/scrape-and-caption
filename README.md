@@ -56,7 +56,7 @@ This project has **two main parts**:
 
 2. Configure AWS CLI:
 
-```bash
+```
 aws configure
 # Enter AWS Access Key ID
 # Enter AWS Secret Access Key
@@ -77,29 +77,49 @@ scrape-and-caption/
 ├─ scrape_data.py           # Scrapes images from Mytheresa
 └─ README.md
 ## Installation and Setup
+```
 
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/Jinanrachid/scrape-and-caption.git
-cd scrape-and-caption
+
+'git clone https://github.com/Jinanrachid/scrape-and-caption.git'
+'cd scrape-and-caption'
 
  ### 2. Create a virtual environment
 
-```bash
+```
 python -m venv .venv
-
+```
 ### 3. Activate the virtual environment
 
-'''bash
+```
 .venv\Scripts\activate  # Windows
-
+```
 ### 4. Install dependencies
 
-'''bash
+```
 pip install -r application/frontend/requirements.
-
-
-
+```
+## Usage Instructions
+### Part 1: Scraping Data
+```
+python scrape_data.py
+```
+### Part 2: Generate Captions for Task1/under_1000
+```
+python model_inference.py
+```
+Uses model_claude.py to generate captions for every image in Task1/under_1000.
+Saves results as a CSV file named captions.csv in the same folder.
+### Part 3: Run Web Application
+```
+cd application/backend
+python app.py
+```
+Frontend (Streamlit): (in a separate terminal)
+```
+cd application/frontend
+streamlit run index.py
+```
 
 
