@@ -102,7 +102,7 @@ python -m venv .venv
 ### 4. Install dependencies
 
 ```
-pip install -r application/frontend/requirements.
+pip install -r application/frontend/requirements.txt
 ```
 ## Usage Instructions
 ### Part 1: Scraping Data
